@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alphastranger/Note-Taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alphastranger/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/Alphastranger/Note-Taker#readme"
 }
