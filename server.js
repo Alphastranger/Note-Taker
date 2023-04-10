@@ -9,6 +9,7 @@ const app = express()
 const PORT = 3001;
 
 app.use(express.json())
+app.use(express.static('public'))
 
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'))
@@ -34,6 +35,7 @@ app.post('/api/notes', (req, res) => {
         const newNote = {
             title,
             text,
+            note_id: uuid()
         };
         fs.readFile('./db/db.json', 'utf8', (err, data) => {
             if (err) {
